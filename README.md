@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="assets/hero.png" alt="Alpha Skills Hero Image" width="100%" />
   <h1>The Alpha Skills Suite</h1>
   <p><strong>105 Elite AI Agent Skills for Quant Trading, Market Intelligence, and Creative Production</strong></p>
   <p>
