@@ -45,6 +45,8 @@ The hardest part of algo trading isn't writing the strategy—it's proving it wo
 | Skill | What It Does |
 |-------|-------------|
 | **[pine-to-python](skills/pine-to-python/)** | **[NEW]** Translates brittle TradingView PineScript into vectorized Python. Extracts parameters automatically for Optuna hyperparameter optimization. |
+| **[quant-feature-engineer](skills/quant-feature-engineer/)** | **[NEW]** Renaissance Tech-style feature engineering. Build unified scoring models instead of isolated strategies. |
+| **[ghost-auto-trader](skills/ghost-auto-trader/)** | **[NEW]** Deploy the Ghost Auto-Trader framework: TV webhook -> AI Gate -> Broker Execution for 0DTE options. |
 | **[backtest-expert](skills/backtest-expert/)** | The "beat ideas to death" methodology. Enforces slippage modeling, bias prevention, and overfitting detection. |
 | **[edge-strategy-reviewer](skills/edge-strategy-reviewer/)** | An LLM "Pessimistic Strategist". Evaluates strategy drafts for edge plausibility and execution realism. Issues PASS/REVISE/REJECT verdicts. |
 | **[strategy-pivot-designer](skills/strategy-pivot-designer/)** | Detects when your Optuna optimization hits a local optimum and proposes structurally different strategy pivots. |
