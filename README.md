@@ -112,6 +112,11 @@ Why just build algorithms when you can build the SaaS companies to sell them?
 | **[guizang-ppt](skills/guizang-ppt/)** | E-magazine style horizontal HTML presentations with WebGL fluid backgrounds. |
 | **[mobile-app](skills/mobile-app/)** | Generates pixel-accurate iPhone 15 Pro framed mobile prototypes. |
 
+### Content & Voice
+| Skill | What It Does |
+|-------|-------------|
+| **[mph-substack-writer](skills/mph-substack-writer/)** | **[NEW]** Captures Michael's exact Substack writing style. Enforces hard rules (no em dashes, PG-13, recovery wisdom, no markdown tables). |
+
 ### Media Generation
 | Skill | What It Does |
 |-------|-------------|
