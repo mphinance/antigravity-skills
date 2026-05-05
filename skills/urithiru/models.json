@@ -1,0 +1,120 @@
+{
+  "last_updated": "2026-04-26",
+  "api_source": "https://openrouter.ai/api/v1/models",
+  "note": "Run update_models.py to refresh. Codenames are Stormlight Archive characters.",
+
+  "core_lanes": [
+    {
+      "lane": 1,
+      "id": "openai/gpt-5",
+      "codename": "Lola",
+      "role": "Clarity and readability. The baseline clean implementation.",
+      "strength": "Readable code, practical solutions, consistent output format",
+      "weakness": "Can be generic, avoids controversy, plays it safe on edge cases",
+      "prompt_cost_per_m": 1.25,
+      "completion_cost_per_m": 10.00,
+      "context_length": 400000,
+      "enabled": true
+    },
+    {
+      "lane": 2,
+      "id": "anthropic/claude-sonnet-4.6",
+      "codename": "Stormfather",
+      "role": "Edge cases, risk analysis, error handling. The one who warns you.",
+      "strength": "Catches failure modes, thorough error handling, nuanced safety analysis",
+      "weakness": "Over-engineers, imports unnecessary dependencies, verbose",
+      "prompt_cost_per_m": 3.00,
+      "completion_cost_per_m": 15.00,
+      "context_length": 1000000,
+      "enabled": true
+    },
+    {
+      "lane": 3,
+      "id": "google/gemini-2.5-pro",
+      "codename": "Navani",
+      "role": "Theory-first scholar. Explains the why before the how.",
+      "strength": "Deep theoretical grounding, massive context window, excels at long-form analysis",
+      "weakness": "Verbose, spends too long on setup, sometimes misses practical implementation",
+      "prompt_cost_per_m": 1.25,
+      "completion_cost_per_m": 10.00,
+      "context_length": 1048576,
+      "enabled": true
+    },
+    {
+      "lane": 4,
+      "id": "x-ai/grok-4-fast",
+      "codename": "Wit",
+      "role": "Fast, sharp, type-safe, production-ready.",
+      "strength": "Speed, conciseness, type hints, professional code style, 2M context",
+      "weakness": "Terse to the point of missing context, can skip nuance",
+      "prompt_cost_per_m": 0.20,
+      "completion_cost_per_m": 0.50,
+      "context_length": 2000000,
+      "enabled": true
+    },
+    {
+      "lane": 5,
+      "id": "deepseek/deepseek-v4-pro",
+      "codename": "Pattern",
+      "role": "Mathematical rigor, deep reasoning, quantitative analysis.",
+      "strength": "Step-by-step chain of thought, strong on math and algorithms, different training corpus",
+      "weakness": "Heavy markdown formatting, can be verbose, occasional English fluency issues",
+      "prompt_cost_per_m": 0.43,
+      "completion_cost_per_m": 0.87,
+      "context_length": 1048576,
+      "enabled": true
+    }
+  ],
+
+  "expansion_lanes": [
+    {
+      "lane": 6,
+      "id": "qwen/qwen3-235b-a22b",
+      "codename": "Shallan",
+      "role": "Devil's advocate. Finds the angle nobody else is looking at.",
+      "strength": "Alternative perspectives, challenges consensus, creative problem framing",
+      "weakness": "Inconsistent quality on edge cases, can go too far off-center",
+      "prompt_cost_per_m": 0.45,
+      "completion_cost_per_m": 1.82,
+      "context_length": 131072,
+      "enabled": true
+    },
+    {
+      "lane": 7,
+      "id": "mistralai/mistral-large-2512",
+      "codename": "Adolin",
+      "role": "Direct, concise audit lens. Security and maintenance reviewer.",
+      "strength": "Conciseness, European training data diversity, good at security review",
+      "weakness": "Smaller training corpus than GPT/Claude, can miss cultural context",
+      "prompt_cost_per_m": 0.50,
+      "completion_cost_per_m": 1.50,
+      "context_length": 262144,
+      "enabled": true
+    }
+  ],
+
+  "orchestrator": {
+    "id": "antigravity",
+    "role": "You. The synthesis layer. Reads all lanes and produces the unified answer.",
+    "note": "Antigravity is always the orchestrator regardless of which model is currently running it. The orchestrator is NOT a lane."
+  },
+
+  "excluded": [
+    {
+      "id": "anthropic/claude-opus-4.6",
+      "reason": "Too expensive ($5/$25/M) for a lane. Orchestrator tier."
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "reason": "Too expensive ($5/$30/M). GPT-5 is 4x cheaper with comparable quality for lane use."
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "reason": "Cheap ($0.15/M) but quality doesn't match other lanes for synthesis tasks."
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "reason": "Strong reasoner but only 64K context and $0.70/$2.50. DeepSeek V4 Pro is better value."
+    }
+  ]
+}
