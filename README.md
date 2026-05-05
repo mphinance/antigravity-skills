@@ -11,6 +11,25 @@
 
 ---
 
+## 📑 Table of Contents
+- [🧠 The "Aha!" Moment](#-the-aha-moment)
+- [🚀 Quick Start](#-quick-start)
+- [🔥 The Quant Trading Engine](#-the-quant-trading-engine)
+  - [1. Strategy Optimization & Backtesting](#1-strategy-optimization--backtesting)
+  - [2. Market Intelligence & Regime Detection](#2-market-intelligence--regime-detection)
+  - [3. The Edge Research Pipeline](#3-the-edge-research-pipeline)
+  - [4. Advanced Stock Screening](#4-advanced-stock-screening)
+  - [5. Options, Portfolio & Risk Management](#5-options-portfolio--risk-management)
+  - [6. Dividend & Income (Kanchi Method)](#6-dividend--income-kanchi-method)
+- [🎨 Creative Production & Prototyping](#-creative-production--prototyping)
+  - [Web, Dashboards & Presentations](#web-dashboards--presentations)
+  - [Content & Voice](#content--voice)
+  - [Media Generation](#media-generation)
+- [⚙️ Agent Infrastructure & Workflow](#️-agent-infrastructure--workflow)
+- [💼 Enterprise Consulting & Custom Integrations](#-enterprise-consulting--custom-integrations)
+
+---
+
 ## 🧠 The "Aha!" Moment
 
 AI agents like Claude Code and Gemini are only as good as the context you provide them. Out of the box, they are brilliant generalists. 
@@ -135,6 +154,9 @@ Why just build algorithms when you can build the SaaS companies to sell them?
 | Skill | What It Does |
 |-------|-------------|
 | **[urithiru](skills/urithiru/)** | **Multi-lane AI verification.** Fans out complex queries to 5-7 models simultaneously (via OpenRouter) and synthesizes the consensus to prevent hallucinations. |
+| **[portable-memory-core](skills/portable-memory-core/)** | **[NEW]** Enforces the One Brain protocol. A portable `.agent/` folder that tracks your preferences, context, and identity across all IDEs and CLI tools. *(Inspired by codejunkie99/agentic-stack)* |
+| **[skill-warden](skills/skill-warden/)** | **[NEW]** Automates health and security audits of your `skills/` tree to find dead skills, conflicting triggers, and risky shell executions. *(Inspired by Fangcun-AI/SkillWard & runesleo/claude-skill-audit)* |
+| **[mental-model-evaluator](skills/mental-model-evaluator/)** | **[NEW]** Forces a pause before execution and runs your proposed plan through rigorous mental models (Inversion, First Principles, Second-Order). *(Inspired by will2025btc/buffett-perspective & xixu-me/awesome-persona-distill-skills)* |
 | **[skill-designer](skills/skill-designer/)** | Prompts the agent to write its own new skills following repo conventions. |
 | **[dual-axis-skill-reviewer](skills/dual-axis-skill-reviewer/)** | Deterministic + LLM deep review of your skills. Gates PRs with a 0-100 quality score. |
 | **[grill-me](skills/grill-me/)** | The agent interviews you relentlessly about an idea until the decision tree is fully mapped. |
@@ -146,7 +168,8 @@ Why just build algorithms when you can build the SaaS companies to sell them?
 
 The days of manual trading and generic ChatGPT prompts are over. If you are a hedge fund, prop desk, or SaaS founder looking to implement autonomous workflows, custom LLM strategy evaluators, or high-frequency data pipelines:
 
-**[Link to your Substack / Newsletter]**  
-**[Link to Consulting / Contact Info]**
+- **Newsletter & Deep Dives:** [mphinance.substack.com](https://mphinance.substack.com/)
+- **Trading Tools:** [TraderDaddy Pro](https://www.traderdaddy.pro/?ref=8DUEMWAJ)
+- **Support the Project:** [Buy me a coffee on Ko-fi](https://ko-fi.com/mphinance)
 
 *Built by [@mphinance](https://github.com/mphinance).*
